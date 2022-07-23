@@ -1,0 +1,27 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: admin
+    url: jdbc:mysql://localhost:3307/ihis
+    username: root
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show:
+          sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: mukesh123java@gmail.com
+    password: mukesh@99
+    properties:
+     mail:
+      smtp:
+       starttls:
+         enable: true
+       auth: true
